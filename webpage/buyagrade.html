@@ -1,8 +1,15 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<title>Buy Your Way to a Better Education!</title>
 		<link href="buyagrade.css" type="text/css" rel="stylesheet" />
+		<style>
+			div {
+				text-align: center;
+				font-size: 200%;
+				background-color: grey;
+			}
+		</style>
 	</head>
 	
 	<body>
@@ -15,24 +22,26 @@
 		<hr />
 		
 		<h2>Give Us Your Money</h2>
-		<dl>
-			<dt>Name</dt>
-			<dd>
-				???
-			</dd>
-			
-			<dt>Section</dt>
-			<dd>
-				???
-			</dd>
-			
-			<dt>Credit Card</dt>
-			<dd>
-				???
-			</dd>
-		</dl>
+		<form action="/sucker.php.php" method="post">
+			<label for="fname">Name</label><br>
+			<input type="text" id="fname" name="fname"><br>
+			<label for="section">Section</label><br>
+			<select id="section" name="section">
+				<option value="sec001">001</option>
+				<option value="sec002">002</option>
+				<option value="sec003">003</option>
+				<option value="sec004">004</option>
+				<option value="sec005">005</option>
+			</select><br>
+			<label for="credit cads">Credit Card</label><br>
+			<input type="text" id="credit cads" name="credit_card"><br>
+			<input type="radio" id="Visa Card" name="Card" value="visa">
+			<label for="Visa Card">Visa Card</label>
+			<input type="radio" id="Master Card" name="credit_card" value="master">
+			<label for="Master Card">Master Card</label>
+		</form>
 		
-		<div>
+		<div style="align:center;">
 			I am a giant sucker.
 		</div>
 	</body>
